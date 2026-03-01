@@ -98,6 +98,19 @@ In the CLI tabs let press the enter key to get started
 
 - Step 4 Type no shutdown so it always stays on then exit.
 
-    
+- Step 5 Now lets lets set up our DHCP pool(network,main baseline IP address,DNS server).First lets Type ip dhcp pool ABC-POOL hit enter.
+  + Type network 192.168.10.0  255.255.255.0.
+  + Now like let's configure the main baseline IP address by type default-router 192.168.10.1 .
+  + Then the DNS server by typing 192.168.10.254
+  + Type exit and exit again to completely leave the configuration setting and write memory.
 
+ Now we should see all green arrowns meaning connectity. now lets configure the end users devices starting with PC0
+- Step 1 Click on the PC let find the desktop tab there you should see that it is on is default IP configuration which is static.We want to chose DHCP and you will see that it is atomicatically assigned to the DHCP configurations which we set up above.
+  
+- Step 2 Repeat step 1 for each device (Notice every PC will have the a different IP address but still on the same network)
+  
+- Step 3 now that you finished configuring lets ping our PCs.Go to your Desktop tab and click command Prompt.lets ping our first PC so type ping  192.168.10.2 which is our IP address for our PC0.After seeing the ping work Ping the next 5 PC using their IP address( so the command will be ping 192.168.10.3-5) to see if the are connected.
+  
+- Step 4
+  
   
