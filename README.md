@@ -1,7 +1,7 @@
 # Small Office Network Building Lab
 
 
-<img width="1150" height="842" alt="Image" src="https://github.com/user-attachments/assets/2917e78f-8d89-4216-9048-78ddcc6b61d7" />
+<img width="1280" height="882" alt="Image" src="https://github.com/user-attachments/assets/afa4ee14-5d28-45ee-ad04-112542523c7b" />
 
 
 Overview:
@@ -10,7 +10,8 @@ This project models a functional small office network using Packet Tracer, inclu
 Key Components:
 - Configured DHCP scopes, DNS records, and IP addressing.
 - Designed a network diagram with routers, switches, and clients.
-- Simulated common network failures: DNS outages, IP conflicts, gateway misconfigurations. - Created a professional troubleshooting guide with command outputs.
+- Simulated common network failures: DNS outages, IP conflicts, gateway misconfigurations.
+- Created a professional troubleshooting guide with command outputs.
   
 Skills Demonstrated:
 - TCP/IP fundamentals
@@ -23,7 +24,7 @@ Skills Demonstrated:
 So here is where we are goimng to grab our router, switch, DHCP, DNS, and end devices and connect them using our cables aswell.
 
  
-So let start with our router and switch
+So let start with our router and switch.
 
 for your router we  are using 2911 model
 
@@ -90,27 +91,42 @@ Let's work on the router first lets click Router 0 and in the router window lets
 
 In the CLI tabs let press the enter key to get started
 
-- Step 1 After that type enable enter then configt which leads to you admin commands and privaliges for the router.(You will know your in configurastion commands because it will say Router(configt)#)
+<img width="500" height="131" alt="Image" src="https://github.com/user-attachments/assets/49a1f1ab-433d-409b-9662-d09ff466e779" />
 
-- Step 2 Type interface g0/0 and enter (which if you rememeber when you connected the Router to the Switch the gigabitEthernet 0/0 that we connected to so if you use a different gigabitEthernet use that on this step but mine was 0/0)
+- Step 1 After that type enable enter. Now then config t which leads to you admin commands and privaliges for the router.(You will know your in configurastion commands because it will say Router(configt)#)
+  
+<img width="497" height="46" alt="Image" src="https://github.com/user-attachments/assets/5a604f66-d68d-4ebb-acad-13215eb26f7d" />
+<img width="409" height="46" alt="Image" src="https://github.com/user-attachments/assets/2c5035bb-ee44-44f4-a871-033ef83f56e0" />
 
-- Step 3  Set the IP address and subnet mask so type ip address and whatever Ip address you want spave and give it a subnet mask ( I'm using 192.168.10.1 for my IP address and 255.255.255.0 as my subnet mask )
+- Step 2 Type interface g0/0 and enter (which if you rememeber when you connected the Router to the Switch the gigabitEthernet 0/0 that we connected to so if you use a different gigabitEthernet use that on this step but mine was 0/0). Set the IP address and subnet mask so type IP address and whatever Ip address you want save and give it a subnet mask ( I'm using 192.168.10.1 for my IP address and 255.255.255.0 as my subnet mask )
+  
+<img width="624" height="92" alt="Image" src="https://github.com/user-attachments/assets/db55a996-ce1a-4e0b-b09b-29814256b49d" />
 
-- Step 4 Type no shutdown so it always stays on then exit.
+- Step 3 Type no shutdown so it always stays on then exit.
 
-- Step 5 Now lets lets set up our DHCP pool(network,main baseline IP address,DNS server).First lets Type ip dhcp pool ABC-POOL hit enter.
+ <img width="491" height="164" alt="Image" src="https://github.com/user-attachments/assets/8dce5a28-0edc-4f33-85b4-759d627c3e46" />
+
+- Step 4 Now lets lets set up our DHCP pool(network,main baseline IP address,DNS server).First lets Type ip dhcp pool ABC-POOL hit enter.
+  
   + Type network 192.168.10.0  255.255.255.0.
-  + Now like let's configure the main baseline IP address by type default-router 192.168.10.1 .
-  + Then the DNS server by typing 192.168.10.254
+    
+  + Now like let's configure the main baseline IP address by typing default-router 192.168.10.1.
+      
+  + Then the DNS server by typing dns-server 192.168.10.11
+    
   + Type exit and exit again to completely leave the configuration setting and write memory.
+    
+<img width="1280" height="882" alt="Image" src="https://github.com/user-attachments/assets/afa4ee14-5d28-45ee-ad04-112542523c7b" />
 
- Now we should see all green arrowns meaning connectity. now lets configure the end users devices starting with PC0
+ Now we should see all green arrowns meaning connectity. now lets configure the end users devices starting with PC0.
+ 
 - Step 1 Click on the PC let find the desktop tab there you should see that it is on is default IP configuration which is static.We want to chose DHCP and you will see that it is atomicatically assigned to the DHCP configurations which we set up above.
   
 - Step 2 Repeat step 1 for each device (Notice every PC will have the a different IP address but still on the same network)
   
 - Step 3 now that you finished configuring lets ping our PCs.Go to your Desktop tab and click command Prompt.lets ping our first PC so type ping  192.168.10.2 which is our IP address for our PC0.After seeing the ping work Ping the next 5 PC using their IP address( so the command will be ping 192.168.10.3-5) to see if the are connected.
   
-- Step 4
+
+Now 
   
   
