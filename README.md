@@ -124,9 +124,39 @@ In the CLI tabs let press the enter key to get started
   
 - Step 2 Repeat step 1 for each device (Notice every PC will have the a different IP address but still on the same network)
   
-- Step 3 now that you finished configuring lets ping our PCs.Go to your Desktop tab and click command Prompt.lets ping our first PC so type ping  192.168.10.2 which is our IP address for our PC0.After seeing the ping work Ping the next 5 PC using their IP address( so the command will be ping 192.168.10.3-5) to see if the are connected.
+- Step 3 now that you finished configuring lets ping our PCs.Go to your Desktop tab and click command Prompt.lets ping our first PC so type ping  192.168.10.2 which is our IP address for our PC0.After seeing the ping work Ping the next 5 PC using their IP address(so the command will be ping 192.168.10.3-5) to see if the are connected).
   
 
-Now 
+Now lets configure the PCs
+---
+Now lets configure the IP address for PC 0-5. 
+
+<img width="541" height="226" alt="Image" src="https://github.com/user-attachments/assets/f70f05bf-b692-4a02-9ab1-5d880c77a9e2" />
+<img width="755" height="407" alt="Image" src="https://github.com/user-attachments/assets/aa48b20e-8e4f-4db9-a56f-5ba9292c61b1" />
+
+So lets click on PC0 and once inside click on Desktop tab and once in the desktop tab click on the IP Configuration tab.
+
+<img width="956" height="662" alt="Image" src="https://github.com/user-attachments/assets/bff8ba81-047d-47f2-9a07-274d1f346e53" />
+
+Once inside the IP config page you will see that it is on it's default setting of static which can be used if you want to manual configure it but in this case we have a DHCP server that we have already configured though the router and DHCP server. So now let click on the DHCP and you will see that it automatically  configures the IP address, Subnet mask , Default Gateway , and DNS Server. (You will see that the IP address was assigned to 192.168.10.2, Subnet mask 255.255.255.0, Default Gateway 192.168.10.1, and DNS Server 192.168.10.11)
+
+<img width="927" height="455" alt="Image" src="https://github.com/user-attachments/assets/98cfcbef-e3ac-4c6b-8923-0379a62090c2" />
+
+Now lets repeat it for PC 1 - 5  and as you can see the IP address changes for each Device.
+
+<img width="924" height="455" alt="Image" src="https://github.com/user-attachments/assets/b65ab013-6107-4436-980f-13de1f216391" />
+
+
+<img width="932" height="455" alt="Image" src="https://github.com/user-attachments/assets/438cea30-457d-4a10-9c8f-b01b91e5e490" />
+
+
+<img width="944" height="457" alt="Image" src="https://github.com/user-attachments/assets/9fa3bd4b-2463-45aa-89fd-d26d70ef9f71" />
+
+
+<img width="935" height="452" alt="Image" src="https://github.com/user-attachments/assets/ab887cf9-f26b-4d50-9eb6-1e571dfc1bb6" />
+
+ 
+<img width="941" height="460" alt="Image" src="https://github.com/user-attachments/assets/3d3051e4-64b7-4fcf-b923-023254bf69ac" />
+
   
   
